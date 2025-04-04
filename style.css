@@ -1,0 +1,75 @@
+/* Basic Reset & Body Styles */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Container for Centering Content */
+  main {
+    max-width: 960px;
+    margin: 2rem auto; /* Adds space top/bottom, centers left/right */
+    padding: 0 1rem; /* Adds padding on smaller screens */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  /* Header & Footer Styles */
+  header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  header h1 {
+      margin: 0;
+  }
+  
+  footer {
+      margin-top: 2rem;
+      font-size: 0.9em;
+  }
+  
+  /* Section Styling */
+  section {
+    padding: 1.5rem;
+    margin-bottom: 1rem; /* Space between sections */
+    border-bottom: 1px solid #eee; /* Separator line */
+  }
+  
+  section:last-child {
+      border-bottom: none; /* Remove line from last section */
+  }
+  
+  h2 {
+    color: #555;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+    margin-top: 0; /* Remove default top margin */
+  }
+  
+  /* List Styling */
+  ul {
+    list-style: disc; /* Or 'none' if you prefer no bullets */
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 0.5rem; /* Space between list items */
+  }
+  
+  /* Link Styling */
+  a {
+    color: #007bff; /* Blue link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  a:hover, a:focus {
+    text-decoration: underline; /* Add underline on hover/focus */
+    color: #0056b3; /* Darker blue on hover */
+  }
