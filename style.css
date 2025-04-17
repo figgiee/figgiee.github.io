@@ -1,27 +1,31 @@
-/* Basic Reset & Body Styles */
+/* Basic Body Styles */
 body {
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif; 
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #22232c; 
+    color: #c1fe03; 
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
   }
   
-  /* Container for Centering Content */
+  
   main {
     max-width: 960px;
-    margin: 2rem auto; /* Adds space top/bottom, centers left/right */
-    padding: 0 1rem; /* Adds padding on smaller screens */
-    background-color: #fff;
+    margin: 2rem auto; 
+    padding: 0 1rem; 
+    background-color: #22232c; 
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  
+    flex-grow: 1; 
   }
   
-  /* Header & Footer Styles */
+  /* Header and Footer Styles */
   header, footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #010101; 
+    color: #c1fe03; 
     text-align: center;
     padding: 1rem 0;
   }
@@ -38,38 +42,67 @@ body {
   /* Section Styling */
   section {
     padding: 1.5rem;
-    margin-bottom: 1rem; /* Space between sections */
-    border-bottom: 1px solid #eee; /* Separator line */
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #555;
   }
   
   section:last-child {
-      border-bottom: none; /* Remove line from last section */
+      border-bottom: none;
   }
   
   h2 {
-    color: #555;
-    border-bottom: 2px solid #eee;
+    color: #c1fe03; 
+    border-bottom: 2px solid #555; 
     padding-bottom: 0.5rem;
-    margin-top: 0; /* Remove default top margin */
+    margin-top: 0;
   }
   
   /* List Styling */
   ul {
-    list-style: disc; /* Or 'none' if you prefer no bullets */
+    list-style: disc;
     padding-left: 20px;
   }
   
   li {
-    margin-bottom: 0.5rem; /* Space between list items */
+    margin-bottom: 1.0rem;
   }
   
   /* Link Styling */
   a {
-    color: #007bff; /* Blue link color */
-    text-decoration: none; /* Remove underline */
+    color: #c1fe03; 
+    text-decoration: none;
   }
   
   a:hover, a:focus {
-    text-decoration: underline; /* Add underline on hover/focus */
-    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline; 
+    color: #FFFFFF;
   }
+
+/* Project Detail Page Styling */
+.project-detail h2 {
+  margin-bottom: 1.5rem; 
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 75%;
+  margin-bottom: 1.5rem;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #555;
+}
+
+.project-description p {
+  margin-bottom: 1rem; 
+  line-height: 2.0; 
+}

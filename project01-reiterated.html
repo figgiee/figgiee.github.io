@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project 01 (Reiterated) - Brandon's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html">Brandon's Portfolio</a></h1>
+    </header>
+
+    <main>
+      <section class="project-detail">
+        <h2>Project 01 (Reiterated)</h2>
+        
+        <div class="iframe-container">
+          <iframe src="https://editor.p5js.org/bfigarel/full/9QfXxYWdD" title="p5.js sketch for Project 01 Reiterated"></iframe>
+        </div>
+
+        <div class="project-description">
+          <p>This project involved iterating on an earlier p5.js sketch of headphones. The initial version used basic shapes and inline drawing commands. The goal of this iteration was to enhance the visual detail, add a sense of depth and more accurate form to things like the cables.</p>
+          <p>Working with the original code was manageable due to the use of push/pop and some comments explaining sections like the headband layers or vertex points. However, the lack of functions meant significant repetition, especially for symmetrical parts like the earcups and support braces. Modifying the hardcoded brace vertices directly was less intuitive than adjusting parameters in the later, refactored functions. The single earcupWidth variable was a good starting point, though.</p>
+          <p>Looking back, I wish I had structured the original project with helper functions from the beginning. Defining drawEarcup and drawSupportBrace earlier would have saved time and made the code much cleaner. Planning for visual depth using highlights and shadows, rather than just flat colors, could also have been integrated more naturally from the start instead of being layered on during iteration.</p>
+          <p>During the iteration process, getting the visual subtleties right was the main challenge. Simulating shading and highlights using overlapping arcs required tweaking positions and stroke weights. Creating the faux radial gradient for the inner earpad involved experimentation with lerpColor and concentric shapes. Refining the brace shape vertices and the curve of the cables also took some trial and error to look natural. Deciding how much detail to add without overcomplicating the flat aesthetic was also something I was considering. I'm happy with how it came out!</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Brandon Figarella</p>
+        <script>document.getElementById('year').textContent = new Date().getFullYear();</script> 
+    </footer>
+
+  </body>
+</html> 
