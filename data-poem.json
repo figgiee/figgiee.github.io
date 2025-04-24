@@ -1,0 +1,41 @@
+{
+  "creativityProcess": {
+    "title": "BEGIN CREATIVITY",
+    "mainLoop": {
+      "condition": "WHILE (mind.isAwake)",
+      "steps": [
+        "gather fragments.of.dreams",
+        "mix colors.of.imagination"
+      ],
+      "conditionalCheck": {
+        "condition": "IF (doubt.exists)",
+        "actions": [
+          "breathe.deeply",
+          "release.fear",
+          "expand.boundaries"
+        ]
+      },
+      "iteration": {
+        "scope": "FOR each moment IN life",
+        "actions": [
+          "paint outside.the.lines",
+          "break rules.of.reality",
+          "create something.beautiful"
+        ]
+      },
+      "culmination": {
+        "condition": "UNTIL inspiration.fades",
+        "state": [
+          {"let": "heart", "be": "flow.freely"},
+          {"let": "soul", "be": "dance.wildly"},
+          {"let": "spirit", "be": "soar.higher"}
+        ]
+      }
+    },
+    "finalOutput": {
+      "label": "OUTPUT",
+      "value": "infinite.possibilities"
+    },
+    "endMarker": "END CREATIVITY"
+  }
+} 
