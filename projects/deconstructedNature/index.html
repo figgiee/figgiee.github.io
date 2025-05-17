@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deconstructed Nature</title>
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Deconstructed Nature</h1>
+        <a href="../../index.html" class="back-to-portfolio-btn">Back to Portfolio</a>
+    </header>
+
+    <main>
+        <div id="videoContainer">
+            <video
+                id="myVideo"
+                class="video-js vjs-default-skin"
+                preload="auto"
+                data-setup='{ "controls": false, "autoplay": false, "preload": "auto" }'>
+                <source src="Busy Beavers Build Dam Ahead of Winter  Yellowstone  BBC Earth.webm" type="video/webm">
+                <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that
+                    <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                </p>
+            </video>
+        </div>
+
+        <div id="controls">
+            <button id="playPauseButton">Play Deconstructed Nature</button>
+            <span id="statusIcon"></span><p id="status">Status: Idle</p>
+        </div>
+    </main>
+
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+    <script src="videoDeconstructor.js"></script>
+</body>
+</html> 
